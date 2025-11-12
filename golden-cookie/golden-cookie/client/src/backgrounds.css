@@ -1,0 +1,180 @@
+/* Imagens de fundo estratégicas para harmonia visual */
+
+/* Hero Section - Padrão sutil com cookies */
+.hero-background {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 250, 245, 0.95) 100%);
+}
+
+.hero-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(200, 150, 100, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Diferenciais Section - Padrão geométrico suave */
+.diferenciais-background {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.98) 0%, rgba(245, 240, 235, 0.98) 100%);
+}
+
+.diferenciais-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(45deg, rgba(200, 150, 100, 0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(200, 150, 100, 0.03) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(200, 150, 100, 0.03) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(200, 150, 100, 0.03) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+  pointer-events: none;
+}
+
+/* Cardápio Section - Padrão quadriculado pastel como marca d'água */
+.cardapio-background {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.97) 0%, rgba(250, 245, 240, 0.97) 100%);
+}
+
+.cardapio-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(0deg, rgba(200, 150, 100, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 150, 100, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.cardapio-background::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(200, 150, 100, 0.06) 2px, transparent 2px);
+  background-size: 30px 30px;
+  opacity: 0.3;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/* Combos Section - Padrão diagonal suave */
+.combos-background {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(245, 240, 235, 0.96) 100%);
+}
+
+.combos-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 35px,
+      rgba(200, 150, 100, 0.04) 35px,
+      rgba(200, 150, 100, 0.04) 70px
+    );
+  pointer-events: none;
+}
+
+/* Sobre Section - Padrão suave com círculos */
+.sobre-background {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.98) 0%, rgba(250, 245, 240, 0.98) 100%);
+}
+
+.sobre-background::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(200, 150, 100, 0.05) 1px, transparent 1px);
+  background-size: 25px 25px;
+  opacity: 0.5;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.sobre-background::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(200, 150, 100, 0.05) 1px, transparent 1px);
+  background-size: 25px 25px;
+  opacity: 0.5;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+/* Contato Section - Padrão ondulado suave */
+.contato-background {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.97) 0%, rgba(245, 240, 235, 0.97) 100%);
+}
+
+.contato-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(200, 150, 100, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(200, 150, 100, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Footer - Padrão sutil */
+.footer-background {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.98) 0%, rgba(250, 245, 240, 0.98) 100%);
+}
+
+.footer-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(90deg, rgba(200, 150, 100, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+/* Garantir que o conteúdo fica acima dos backgrounds */
+.relative-content {
+  position: relative;
+  z-index: 1;
+}
